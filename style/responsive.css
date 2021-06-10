@@ -1,0 +1,47 @@
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 1.3rem;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  /* this is use to create the slide nav-bar */
+  .nav-links {
+    position: fixed;
+    background-color: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 1.8em;
+  }
+  /* course media query */
+  .row {
+    flex-direction: column;
+  }
+
+  /* testimonials */
+  .testimonial-col img {
+    margin-right: 1em;
+  }
+  /* the cta section */
+  .cta h1 {
+    font-size: 1.2rem;
+  }
+
+  /* blog section */
+  .sub-header h1 {
+    font-size: 1.8rem;
+  }
+}

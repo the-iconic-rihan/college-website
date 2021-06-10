@@ -1,0 +1,456 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  /* the flex will occupy equal sapce  for every li */
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  /* padding: 0.8em 1.2em; */
+  padding: 8px 12px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
+/* this is used to add line at the bottom of any tab */
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* the icons */
+nav .fa {
+  display: none;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 3rem;
+}
+.text-box p {
+  margin: 0.65em 0 2.5em;
+  font-size: 0.81rem;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  padding: 0.6em 2.1em;
+}
+.hero-btn:hover {
+  border: 1ps solid #f44336;
+  background-color: #f44336;
+  transition: 1s;
+}
+
+/* course section */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+}
+.course h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.course p {
+  color: #777;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.1rem;
+  padding: 0.7em;
+}
+.row {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 0.7em;
+  margin-bottom: 2em;
+  padding: 1.1em 0.8em;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 0.8em 0;
+}
+
+/* the campus styling */
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+}
+/* adding the subtitle to the images */
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 0.5em;
+  margin-bottom: 3em;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+  cursor: pointer;
+}
+.layer h3 {
+  opacity: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  opacity: 1;
+  bottom: 49%;
+}
+
+/* the campus section ends here */
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 4em;
+}
+.facilities-col {
+  flex-basis: 31%;
+  margin: 1.7em;
+  border-radius: 0.8em;
+  text-align: left;
+}
+.facilities-col img {
+  display: block;
+  width: 100%;
+  border-radius: 0.8em;
+}
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  margin: 1em 0 0.98em 0;
+  text-align: left;
+}
+
+/*<!-- testimonials -->*/
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5em;
+}
+.testimonials h3 {
+  margin: 1em 0 0 0;
+  text-align: left;
+}
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 0.8em;
+  margin-bottom: 2em;
+  text-align: left;
+  background-color: #fff3f3;
+  padding: 1.5em;
+  cursor: pointer;
+  display: flex;
+}
+.testimonial-col img {
+  height: 40px;
+  margin: 0 1.7em auto 0.2em;
+  border-radius: 50%;
+}
+.testimonial-col p {
+  padding: 0;
+}
+.testimonial-col .fa {
+  color: #f44336;
+}
+
+/* CTA section */
+.cta {
+  margin: 10em auto 5em auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5em;
+  text-align: center;
+  padding: 10em 0;
+}
+.cta h1 {
+  color: #fff;
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 1.8em 0;
+  text-align: center;
+}
+.footer h4 {
+  margin: 1.5em 0 1.2em 0;
+  font-weight: 600;
+}
+/* .icon{
+  background-color: aqua;
+} */
+.icon .fab {
+  margin: 0 0.7em;
+  cursor: pointer;
+  padding: 1em 0;
+  color: #f44336;
+  border-radius: 0.2em;
+}
+.footer p {
+  width: 80%;
+  display: inline-block;
+}
+p i.far {
+  color: #f44336;
+}
+
+/* the about us page */
+.sub-header {
+  height: 60vh;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.sub-header h1 {
+  margin-top: 2em;
+}
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding: 5em 0 2em 0;
+}
+.about-col {
+  flex-basis: 48%;
+  padding: 1.8em 0.1em;
+}
+.about-col img {
+  width: 100%;
+}
+.about-col p {
+  padding: 0.9em 0 1.5em;
+  text-align: justify;
+}
+.about-col h1 {
+  padding-top: 0;
+}
+.red-btn {
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+}
+.red-btn:hover {
+  color: #fff;
+}
+
+/* blog section */
+
+.blog-content {
+  width: 80%;
+  margin: auto;
+  padding: 1em 0;
+}
+.blog-left {
+  flex-basis: 65%;
+}
+.blog-left img {
+  width: 100%;
+}
+.blog-left h2 {
+  color: #222;
+  font-weight: 600;
+  margin: 2.8em 0;
+}
+.blog-left p {
+  color: #999;
+  padding: 0;
+}
+.blog-right {
+  flex-basis: 33%;
+}
+.blog-right h3 {
+  background-color: #f44336;
+  color: #fff;
+  padding: 0.5em 0;
+  font-size: 1em;
+  margin-bottom: 1.2em;
+}
+.blog-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em;
+  box-sizing: border-box;
+}
+.comment-box {
+  border: 1px solid #ccc;
+  margin: 7em 0;
+  padding: 0.5em 1.2em;
+}
+.comment-box h3 {
+  text-align: left;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  margin: 0.9em 0;
+  padding: 0.7em;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+}
+.comment-form button {
+  margin: 0.7em 0;
+}
+
+/* contact us page */
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 4em 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us {
+  margin: auto;
+  width: 80%;
+}
+.contact-col {
+  flex-basis: 48%;
+  overflow: hidden;
+  margin-bottom: 2.1em;
+}
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.contact-col div .fa {
+  color: #f44336;
+  font-size: 2em;
+  margin: 0.7em;
+  margin-right: 2.8em;
+}
+.contact-col div .far {
+  color: #f44336;
+  font-size: 2em;
+  margin: 0.7em;
+  margin-right: 2.8em;
+}
+.contact-col div p {
+  padding: 0;
+}
+.contact-col div h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2em;
+  color: #555;
+  font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 0.9em;
+  margin-bottom: 1em;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+/* utility class */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+p {
+  font-size: 0.8rem;
+}
