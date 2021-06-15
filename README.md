@@ -4,4 +4,5 @@ It is a dummy educational website , which is completely responsive for all size 
 I would be greatfull, if anyone of you would like to add your suggestion and contribute to enhance the feasibility of
 he web-page.
 
-# Try at:- ghrcem.unaux.com
+# Try at:-
+http://ghrcem.unaux.com/?i=1
