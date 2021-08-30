@@ -5,7 +5,7 @@ I would be greatfull, if anyone of you would like to add your suggestion and con
 he web-page.
 
 # Try at:-
-http://ghrcem.unaux.com/?i=1
+https://the-iconic-rihan.github.io/college-website/
 
 # ScreenShots📸📸 :
 ![image](https://user-images.githubusercontent.com/68491627/121992374-25b50500-cdbf-11eb-8622-26a8e6e2aaae.png)
